@@ -10,17 +10,30 @@ class FantasiaButton extends Component {
       raised: this.props.raised,
     });
 
+    var linkClass = classNames({
+      hidden: this.props.naked
+    });
+
+    var aClass = classNames({
+      hidden: !this.props.naked
+    });
+
     return (
       <div>
         <button type={this.props.type} className={buttonClass}>
           <Link href={this.props.href || "#"}>
-            <a>{this.props.children}</a>
+            <a className={linkClass} href={this.props.aHref}>{this.props.children}</a>
           </Link>
+          <a className={aClass} href={this.props.aHref}>{this.props.children}</a>
         </button>
         <style jsx>{`
           a {
             color: ${this.props.textColor};
             text-decoration: none;
+          }
+
+          .hidden {
+            display: none;
           }
 
           .f-btn {

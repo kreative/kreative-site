@@ -1,0 +1,38 @@
+.hero {
+  height: 100vh;
+  color: white;
+  background-color: #111111;
+  display: flex;
+  align-items: center;
+}
+
+.hero_text {
+  font-size: 4em;
+}
+
+.hero_icon {
+  padding-top: 150px;
+  margin-bottom: -150px;
+}
+
+.rainbow:hover {
+  text-align: center;
+  text-decoration: underline;
+}
+.rainbow_text_animated:hover {
+  background: linear-gradient(to right, #EB5757, #F2994A , #F4B400, #27AE60, #2F80ED, #9B51E0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow_animation 6s ease-in-out infinite;
+  background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+  0%,100% {
+      background-position: 0 0;
+  }
+  50% {
+      background-position: 100% 0;
+  }
+}

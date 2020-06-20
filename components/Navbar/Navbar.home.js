@@ -13,7 +13,7 @@ class DreamflowNavbar extends Component {
       const backgroundcolor =
         window.scrollY < 200
           ? this.props.scrollColor
-          : "rgba(255, 255, 255, 0.7)";
+          : "rgba(0, 0, 0, 0.9)";
       this.setState({ navBackground: backgroundcolor });
     });
   }
@@ -37,7 +37,7 @@ class DreamflowNavbar extends Component {
                   <a href="/">
                     <img
                       className="logo"
-                      src="https://kreative-site.kaycdn.com/kreative-logo@4x.png"
+                      src="https://kreative-site.kaycdn.com/kreative-logo-white@4x.png"
                       alt="Kreative Dreamflow Logo in all black"
                     />
                   </a>
@@ -56,7 +56,7 @@ class DreamflowNavbar extends Component {
                     viewBox="0 0 154 62"
                     xmlns="http://www.w3.org/2000/svg"
                     onClick={this.openMenu}
-                    fill="black"
+                    fill="white"
                   >
                     <rect width="154" height="11.7297" rx="5" />
                     <rect
@@ -102,7 +102,7 @@ class DreamflowNavbar extends Component {
                     role="img"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 352 512"
-                    fill="black"
+                    fill="white"
                     onClick={this.closeMenu}
                   >
                     <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path>
@@ -159,7 +159,8 @@ class DreamflowNavbar extends Component {
             z-index: 2000;
             left: 0;
             top: 0;
-            background-color: white;
+            background-color: black;
+            background-color: rgba(0,0,0,1);
             overflow-x: hidden;
             backdrop-filter: blur(10px);
           }
@@ -182,7 +183,7 @@ class DreamflowNavbar extends Component {
             padding-bottom: 1em;
             text-decoration: none;
             font-size: 3em;
-            color: black;
+            color: white;
             display: block;
           }
 
