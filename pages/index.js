@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Wrapper from "../components/Wrapper/Wrapper";
-import Navbar from "../components/Navbar/Navbar.home";
+import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 import LineLabel from "../components/LineLabel/LineLabel";
 import ProductCard from "../components/ProductCard/ProductCard";
@@ -30,20 +30,23 @@ const HomePage = () => {
           >
             Radical Starts Here.
           </h1>
+          <p>
+            Kreative is a group of enterprises working to build products and
+            services that aid the human race, empower organizations, and make
+            the universe a better place.
+          </p>
           <div className={styles.hero_icon}>
             <FontAwesomeIcon icon={faArrowDown} size="1x" />
           </div>
         </Wrapper>
       </div>
       <Wrapper bg="#F6F6F4" paddingTop="200px" paddingBottom="200px">
-        <div style={{textAlign:"center"}}>
-          <h2 style={{ paddingBottom: "50px" }}>
-            Our Enterprises
-          </h2>
+        <div style={{ textAlign: "center" }}>
+          <h2 style={{ paddingBottom: "50px" }}>Our Products and Services</h2>
         </div>
         <Container style={{ padding: "0px" }} fluid>
           <Row gutterWidth={25}>
-            <Col sm={4} xxl={3} style={{ height: "100%" }}>
+            <Col sm={4} xxl={3}>
               <ProductCard
                 bg="white"
                 align="center"
@@ -73,7 +76,7 @@ const HomePage = () => {
                 }
               />
             </Col>
-            <Col sm={4} xxl={3} style={{ height: "100%" }}>
+            <Col sm={4} xxl={3}>
               <ProductCard
                 bg="white"
                 align="center"
@@ -102,7 +105,7 @@ const HomePage = () => {
                 }
               />
             </Col>
-            <Col sm={4} xxl={3} style={{ height: "100%" }}>
+            <Col sm={4} xxl={3}>
               <ProductCard
                 bg="white"
                 align="center"
@@ -134,14 +137,6 @@ const HomePage = () => {
             </Col>
           </Row>
         </Container>
-      </Wrapper>
-      <Wrapper bg="white" paddingTop="200px" paddingBottom="200px">
-        <LineLabel color="black">WHO WE ARE</LineLabel>
-        <h2>
-          Kreative is a group of enterprises working to build products and
-          services that aid the human race, empower organizations, and make the
-          universe a better place.
-        </h2>
       </Wrapper>
       <Footer />
     </div>

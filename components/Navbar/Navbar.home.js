@@ -37,8 +37,8 @@ class DreamflowNavbar extends Component {
                   <a href="/">
                     <img
                       className="logo"
-                      src="https://kreative-site.kaycdn.com/kreative-logo-white@4x.png"
-                      alt="Kreative Dreamflow Logo in all black"
+                      src="https://kreative-site.kaycdn.com/the-kreative-rainbow.png"
+                      alt="The Kreative Rainbow in white"
                     />
                   </a>
                 </Col>
@@ -148,7 +148,7 @@ class DreamflowNavbar extends Component {
           }
 
           .logo {
-            width: 20%;
+            width: 15%;
           }
 
           .overlay {
