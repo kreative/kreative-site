@@ -32,7 +32,7 @@ const HomePage = () => {
           </h1>
           <p>
             Kreative is a group of enterprises working to build products and
-            services that aid the human race, empower organizations, and make
+            services that improve the human condition, empower organizations, and make
             the universe a better place.
           </p>
           <div className={styles.hero_icon}>
