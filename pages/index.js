@@ -2,11 +2,8 @@ import Head from "next/head";
 import Wrapper from "../components/Wrapper/Wrapper";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
-import LineLabel from "../components/LineLabel/LineLabel";
 import ProductCard from "../components/ProductCard/ProductCard";
 import Button from "../components/Button/Button";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { Container, Row, Col } from "react-grid-system";
 import styles from "../styles/index.module.css";
 
@@ -35,9 +32,6 @@ const HomePage = () => {
             services that improve the human condition, empower organizations, and make
             the universe a better place.
           </p>
-          <div className={styles.hero_icon}>
-            <FontAwesomeIcon icon={faArrowDown} size="1x" />
-          </div>
         </Wrapper>
       </div>
       <Wrapper bg="#F6F6F4" paddingTop="200px" paddingBottom="200px">
