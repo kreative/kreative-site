@@ -1,9 +1,37 @@
+.logo {
+  width: 25%;
+  padding-bottom: 50px;
+}
+
 .splash {
-  text-align: center;
-  height: 40vh;
+  text-align: left;
+  height: 95vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.links {
+  padding-top: 45px;
+  padding-left: 45px;
+}
+
+.link {
+  display: block;
+  padding-bottom: 15px;
+  font-family: "BasierCircle";
+  font-size: 1.2em;
+  text-decoration: none;
+  color: black;
+}
+
+.link:hover {
+  color: #338EEE;
+}
+
+.footer p {
+  font-size: 1em;
+  color: #949494;
 }
 
 .rainbow_text_animated {
@@ -15,6 +43,7 @@
   background-size: 400% 100%;
   padding-bottom: 15px;
 }
+
 
 @keyframes rainbow_animation {
   0%,100% {
