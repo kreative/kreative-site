@@ -27,7 +27,14 @@ const HomePage = () => {
                   className={styles.logo}
                 />
                 <h1 className={styles.rainbow_text_animated}>Radical Starts Here.</h1>
-                <p style={{ color: "#949494" }}>We're on a mission to build products and services that improve the human condition, empower organizations, and make the universe a better place.</p>
+                <p
+                  style={{
+                    color: "#949494",
+                    lineHeight: "32px"
+                  }}
+                >
+                  We're on a mission to build products and services that improve the human condition, empower organizations, and make the universe a better place.
+                </p>
                 <div className={styles.links}>
                   <Link href={"/about-us"}>
                     <a className={styles.link}>Learn more about us</a>

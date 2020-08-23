@@ -1,3 +1,19 @@
+.splash {
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.link {
+  text-decoration: none;
+  color: #338EEE;
+  font-size: 1.2em;
+  text-align: right;
+  padding-bottom: 50px;
+  font-family: "BasierCircle";
+}
+
 .contact_details {
   padding-left: 75px;
   word-wrap: break-word;
@@ -16,6 +32,11 @@
 .contact_info {
   color: #0019FF;
   font-size: 1.6em;
+}
+
+.footer p {
+  font-size: 1em;
+  color: #949494;
 }
 
 @media screen and (max-width: 767px) {

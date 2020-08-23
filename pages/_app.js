@@ -12,6 +12,7 @@ import "../public/fonts/BasierCircle/Basier-Circle-regular-webfont/stylesheet.cs
 import "../public/fonts/BasierCircle/Basier-Circle-regularitalic-webfont/stylesheet.css";
 import "../public/fonts/BasierCircle/Basier-Circle-semibold-webfont/stylesheet.css";
 import "../public/fonts/BasierCircle/Basier-Circle-semibolditalic-webfont/stylesheet.css";
+import "../public/fonts/chomsky_stylesheet.css";
 
 class KreativeSite extends App {
   render() {
