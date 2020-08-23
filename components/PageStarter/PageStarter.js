@@ -8,7 +8,7 @@ class PageStarter extends React.Component {
       <div>
         <Container style={{ padding: "0px" }} fluid>
           <Row nogutter>
-            <Col sm={2}>
+            <Col sm={3} md={2}>
               <div className={"sidebar"}>
                 <div className={"sidebar-wrapper"}>
                   <img
@@ -17,36 +17,29 @@ class PageStarter extends React.Component {
                     className={"logo"}
                   />
                   <div className={"links"}>
-                    <div className={"link"}>
-                      <Link href={""}>
-                        <a>About</a>
-                      </Link>
-                    </div>
-                    <div className={"link"}>
-                      <Link href={""}>
-                        <a>Mission</a>
-                      </Link>
-                    </div>
-                    <div className={"link"}>
-                      <Link href={""}>
-                        <a>Verticals</a>
-                      </Link>
-                    </div>
-                    <div className={"link"}>
-                      <Link href={""}>
-                        <a>Enterprises</a>
-                      </Link>
-                    </div>
-                    <div className={"link"}>
-                      <Link href={""}>
-                        <a>Newsroom</a>
-                      </Link>
-                    </div>
+                    <Link href={"/about"}>
+                      <a className={"link"}>About</a>
+                    </Link>
+                    <Link href={"/about/mission"}>
+                      <a className={"link"}>Mission</a>
+                    </Link>
+                    <Link href={"/verticals"}>
+                      <a className={"link"}>Verticals</a>
+                    </Link>
+                    <Link href={"/enterprises"}>
+                      <a className={"link"}>Enterprises</a>
+                    </Link>
+                    <Link href={"/newsroom"}>
+                      <a className={"link"}>Newsroom</a>
+                    </Link>
+                    <Link href={"/contact-us"}>
+                      <a className={"link"}>Contact Us</a>
+                    </Link>
                   </div>
                 </div>
               </div>
             </Col>
-            <Col sm={10}>
+            <Col sm={9} md={10}>
               <div className={"wrapper"}>
                 {this.props.children}
               </div>
@@ -56,17 +49,20 @@ class PageStarter extends React.Component {
         <style jsx>{`
           .logo {
             width: 50%;
-          }
-          
-          .links {
-            padding-top: 15px;
+            padding-bottom: 50px
           }
           
           .link {
-            margin-top: 10px;
-            margin-bottom: 10px;
+            display: block;
+            padding-bottom: 20px;
             font-family: "BasierCircle";
-            font-size: 1.2em;
+            font-size: 1.4em;
+            text-decoration: none;
+            color: black;
+          }
+          
+          .link:hover {
+            color: #338EEE;
           }
           
           .sidebar {

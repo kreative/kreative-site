@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Wrapper from "../components/Wrapper/Wrapper";
 import { Container, Row, Col } from "react-grid-system";
 import PageStarter from "../components/PageStarter/PageStarter";
 import styles from "../styles/index.module.css";
@@ -18,7 +17,29 @@ const HomePage = () => {
       </Head>
       <div>
         <PageStarter>
-          <h1>something</h1>
+          <div className={styles.splash}>
+            <h1 className={styles.rainbow_text_animated}>Radical Starts Here.</h1>
+          </div>
+          <Container style={{ padding: "0px" }} fluid>
+            <Row gutterWidth={25}>
+              <Col sm={12}>
+
+              </Col>
+            </Row>
+            <Row gutterWidth={25}>
+              <Col sm={12}>
+
+              </Col>
+            </Row>
+            <Row gutterWidth={25}>
+              <Col sm={6}>
+
+              </Col>
+              <Col sm={6}>
+
+              </Col>
+            </Row>
+          </Container>
         </PageStarter>
       </div>
     </div>

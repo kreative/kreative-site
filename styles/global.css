@@ -1,31 +1,60 @@
 h1 {
-  font-family: 'Romana', serif;
+  font-family: 'BasierCircle', serif;
   font-size: 3em;
   font-weight: bold;
   padding: 0;
+  margin: 0;
+  letter-spacing: -0.05em;
 }
 
 h2 {
-  font-family: 'Romana', serif;
+  font-family: 'BasierCircle', serif;
   font-size: 2.7em;
-  font-weight: normal;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  padding: 0;
+  margin: 0;
 }
 
 h3 {
-  font-family: 'Romana', serif;
+  font-family: 'BasierCircle', serif;
   font-size: 2em;
-  font-weight: normal;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  padding: 0;
+  margin: 0;
 }
 
 h4, h5, h6 {
-  font-family: 'Romana', serif;
+  font-family: 'BasierCircle', serif;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  padding: 0;
+  margin: 0;
 }
 
 p {
-  font-family: 'Karla', serif;
+  font-family: 'BasierCircle', sans-serif;
   font-size: 1.3em;
+  letter-spacing: -0.03em;
+  padding: 0;
+  margin: 0;
 }
 
 .ui {
-  font-family: 'Karla' !important;
+  font-family: 'BasierCircle' !important;
+}
+
+@media screen and (max-width: 576px) {
+  h1 {
+    font-size: 2.7em;
+  }
+
+  h2 {
+    font-size: 2.2em;
+  }
+
+  h3 {
+    font-size: 1.8em;
+  }
 }
