@@ -58,9 +58,20 @@ const HomePage = () => {
           <Row nogutter>
             <Col sm={4} />
             <Col sm={4}>
-              <div className={styles.footer}>
-                <p>Copyright &#169;	Kreative, LLC. 2020</p>
-              </div>
+              <Container style={{ padding: "0px" }} fluid>
+                <Row nogutter>
+                  <Col sm={6}>
+                    <div className={styles.footer}>
+                      <p>Copyright &#169;	Kreative, LLC. 2020</p>
+                    </div>
+                  </Col>
+                  <Col sm={6}>
+                    <div className={styles.footer} style={{ textAlign: "right" }}>
+                      <p>Radical starts here.</p>
+                    </div>
+                  </Col>
+                </Row>
+              </Container>
             </Col>
             <Col sm={4} />
           </Row>

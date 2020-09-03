@@ -5,6 +5,7 @@ import path from "path";
 import matter from "gray-matter";
 import marked from "marked";
 import { Container, Row, Col } from "react-grid-system";
+import styles from "../../styles/index.module.css";
 
 const NewsPost = ({ contents, data }) => {
   return (
@@ -23,11 +24,20 @@ const NewsPost = ({ contents, data }) => {
         <Row nogutter>
           <Col sm={4} />
           <Col sm={4}>
-            <div>
-              <h1>{data.title}</h1>
-              <p>{data.author + " | " + data.easyPublishingDate}</p>
-              <div dangerouslySetInnerHTML={{ __html: contents }} />
-            </div>
+            <Container style={{ padding: "0px" }} fluid>
+              <Row nogutter>
+                <Col sm={6}>
+                  <div className={styles.footer}>
+                    <p>Copyright &#169;	Kreative, LLC. 2020</p>
+                  </div>
+                </Col>
+                <Col sm={6}>
+                  <div className={styles.footer} style={{ textAlign: "right" }}>
+                    <p>Radical starts here.</p>
+                  </div>
+                </Col>
+              </Row>
+            </Container>
           </Col>
           <Col sm={4} />
         </Row>
