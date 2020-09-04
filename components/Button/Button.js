@@ -49,7 +49,7 @@ class FantasiaButton extends Component {
             -webkit-box-sizing: border-box;
             font-family: "Karla", serif;
             font-weight: normal;
-            font-size: 1.1em;
+            font-size: ${this.props.fontSize};
             margin: ${this.props.margin};
             -webkit-box-flex: 1 1 auto;
             -moz-box-flex: 1 1 auto;

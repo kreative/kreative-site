@@ -1,0 +1,36 @@
+.header {
+    padding-bottom: 15px;
+}
+
+.logo {
+    width: 25%;
+    padding-bottom: 50px;
+}
+
+.splash {
+    text-align: left;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 50px;
+}
+
+.link {
+    text-decoration: none;
+    color: #338EEE;
+    font-size: 1.2em;
+    text-align: right;
+    padding-bottom: 50px;
+    font-family: "BasierCircle";
+}
+
+.link:hover {
+    color: #338EEE;
+}
+
+.footer p {
+    font-size: 1em;
+    color: #949494;
+    padding-bottom: 15px;
+}
